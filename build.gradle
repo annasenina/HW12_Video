@@ -49,6 +49,6 @@ dependencies {
 
 task tests(type: Test){
     useJUnitPlatform {
-        includeTags 'Google'
+        includeTags 'Yandex'
     }
 }

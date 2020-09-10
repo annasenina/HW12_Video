@@ -13,24 +13,24 @@ import static com.codeborne.selenide.Selenide.open;
 
 @Epic("Q.A. Guru automation course")
 @Story("HW 12")
-@Tag("Google")
+@Tag("Yandex")
 public class SimpleTest {
 
     @Test
-    @Description("Google test, we look for Selenide")
-    @DisplayName("Succsessful search for selenide in google")
+    @Description("Yandex test, we look for Selenide")
+    @DisplayName("Succsessful search for selenide in yandex")
     void selenideSearchTest() {
 
         Configuration.headless = true;
 
         // Открыть google
-        open("https://google.com");
+        open("https://ya.ru");
 
         // Ввести Selenide в поиск
-        $(byName("q")).setValue("Selenide").pressEnter();
+        $("#text").val("wikipedia").pressEnter();
 
         // Проверить, что Selenide появился в результатах поиска
-        $("html").shouldHave(text("ru.selenide.org"));
+        $("html").shouldHave(text("wikipedia.org"));
     }
 }
 
