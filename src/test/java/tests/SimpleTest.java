@@ -1,3 +1,5 @@
+package tests;
+
 import com.codeborne.selenide.Configuration;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -14,7 +16,7 @@ import static com.codeborne.selenide.Selenide.open;
 @Epic("Q.A. Guru automation course")
 @Story("HW 12")
 @Tag("Yandex")
-public class SimpleTest {
+public class SimpleTest extends TestBase {
 
     @Test
     @Description("Yandex test, we look for Selenide")
@@ -28,7 +30,7 @@ public class SimpleTest {
         $("#text").val("wikipedia").pressEnter();
 
         // Проверить, что Selenide появился в результатах поиска
-        $("html").shouldHave(text("wikipedia.org"));
+        $("html").shouldHave(text("wikipedia1.org"));
     }
 }
 
