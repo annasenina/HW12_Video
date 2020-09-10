@@ -30,6 +30,8 @@ public class TestBase {
         attachPageSource();
         attachAsText("Browser console logs", getBrowserConsoleLogs());
 
+        attachVideo();
+
         closeWebDriver();
     }
 
