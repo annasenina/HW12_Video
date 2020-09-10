@@ -21,8 +21,6 @@ public class SimpleTest {
     @DisplayName("Succsessful search for selenide in yandex")
     void selenideSearchTest() {
 
-        Configuration.headless = true;
-
         // Открыть google
         open("https://ya.ru");
 
