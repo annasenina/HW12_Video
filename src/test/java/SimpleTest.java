@@ -1,3 +1,4 @@
+import com.codeborne.selenide.Configuration;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Story;
@@ -19,6 +20,9 @@ public class SimpleTest {
     @Description("Google test, we look for Selenide")
     @DisplayName("Succsessful search for selenide in google")
     void selenideSearchTest() {
+
+        Configuration.headless = true;
+
         // Открыть google
         open("https://google.com");
 
