@@ -30,7 +30,7 @@ public class SimpleTest extends TestBase {
         $("#text").val("wikipedia").pressEnter();
 
         // Проверить, что Selenide появился в результатах поиска
-        $("html").shouldHave(text("wikipedia1.org"));
+        $("html").shouldHave(text("wikipedia.org"));
     }
 }
 
